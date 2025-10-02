@@ -343,7 +343,7 @@ class LUC_AVLTree {
 
     private Node deleteElement(int value, Node node) {
 
-            if (node == null) {        //return id not found
+            if (node == null) {        //return if not found
                     return null; 
             }
 
@@ -386,27 +386,6 @@ class LUC_AVLTree {
                         return RlRotation(node);
                 }
             }
-
-            
-
-        /*
-         * ADD CODE HERE
-         * 
-         * NOTE, that you should use the existing coded private methods
-         * in this file, which include:
-         *      - minValueNode,
-         *      - getMaxHeight,
-         *      - getHeight,
-         *      - getBalanceFactor,
-         *      - LLRotation
-         *      - RRRotation,
-         *      - LRRotation,
-         *      - RLRotation.
-         *
-         * To understand what each of these methods do, see the method prologues and
-         * code for each. You can also look at the method InsertElement, as it has do
-         * do many of the same things as this method.
-         */
 
         return node;
     }

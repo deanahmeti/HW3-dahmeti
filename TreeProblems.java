@@ -1,5 +1,5 @@
 /*
- * *** YOUR NAME GOES HERE / YOUR SECTION NUMBER ***
+ * *** Dean Ahmeti / COMP 272 - 002 ***
  *
  * This java file contains several simple tree problems that need to be
  * codified. These routines  must use the TreeMap and TreeSet library
@@ -56,6 +56,36 @@ public class TreeProblems {
   public boolean treesEqual(Map<Integer, String> tree1,Map<Integer, String> tree2 ) {
 
     // INSERT CODE HERE
+
+    Set<Integer> setA = new TreeSet<>(Arrays.asList(1, 2, 3, 4));
+        Set<Integer> setB = new TreeSet<>(Arrays.asList(3, 4, 5, 6));
+        System.out.println(TreeProblems.different(setA, setB));  
+
+      
+        Map<Integer, String> map = new TreeMap<>();
+        map.put(1, "one");
+        map.put(2, "two");
+        map.put(3, "three");
+        map.put(4, "four");
+        TreeProblems.removeEven(map);
+        System.out.println(map); // Should show keys 1 and 3 only
+
+        
+        Map<Integer, String> tree1 = new TreeMap<>();
+        tree1.put(1, "A");
+        tree1.put(2, "B");
+
+        Map<Integer, String> tree2 = new TreeMap<>();
+        tree2.put(1, "A");
+        tree2.put(2, "B");
+
+        Map<Integer, String> tree3 = new TreeMap<>();
+        tree3.put(1, "A");
+        tree3.put(2, "C");
+
+        TreeProblems tp = new TreeProblems();
+        System.out.println(tp.treesEqual(tree1, tree2)); // true
+        System.out.println(tp.treesEqual(tree1, tree3)); // false
 
     return false;
 
